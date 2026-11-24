@@ -22,6 +22,7 @@ def main():
             if event.type == pg.QUIT: return
         x = tmr % 3200 #練習9
         key_lst = pg.key.get_pressed() #10-3
+        kk_rct.move_ip((-1, 0))          #演習1
         if key_lst[pg.K_UP]:
             kk_rct.move_ip((0, -1))      #練習10-4
         if key_lst[pg.K_DOWN]:
